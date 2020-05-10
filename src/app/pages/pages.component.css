@@ -1,0 +1,13 @@
+hr{
+    box-sizing: content-box;
+    height: 44px;
+    overflow: visible;
+    color: lightgray;
+    margin-inline-start: 0px;
+    margin-inline-end: 20px;
+    margin-left: 20px;
+    mix-blend-mode: difference;
+}
+.header-text{
+    font-size: x-large;
+}

@@ -1,0 +1,117 @@
+<div style="overflow: auto;">
+    <nb-card status="success">
+        <nb-card-header>Simple Card</nb-card-header>
+        <nb-card-body>
+            A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+            Originally, nebula was a name for any diffuse astronomical object,
+            including galaxies beyond the Milky Way.
+        </nb-card-body>
+        <nb-card-footer>By Jagan</nb-card-footer>
+    </nb-card>
+    
+    <nb-flip-card>
+        <nb-card-front>
+          <nb-card accent="danger" status="success">
+            <nb-card-header>Front Card Header</nb-card-header>
+            <nb-card-body>
+              A nebula is an interstellar cloud of dust, hydrogen,
+              helium and other ionized gases.
+              Originally, nebula was a name for
+              any diffuse astronomical object,
+              including galaxies beyond the Milky Way.
+            </nb-card-body>
+          </nb-card>
+        </nb-card-front>
+        <nb-card-back>
+          <nb-card accent="info" status="danger">
+            <nb-card-header>Back Card Header</nb-card-header>
+            <nb-card-body>
+              A nebula is an interstellar cloud of dust, hydrogen,
+              helium and other ionized gases.
+              Originally, nebula was a name for
+              any diffuse astronomical object,
+              including galaxies beyond the Milky Way.
+            </nb-card-body>
+          </nb-card>
+        </nb-card-back>
+      </nb-flip-card>
+    
+      <nb-reveal-card>
+        <nb-card-front>
+          <nb-card accent="info" status="warning">
+            <nb-card-header>Front Card Header</nb-card-header>
+            <nb-card-body>
+              A nebula is an interstellar cloud of dust, hydrogen,
+              helium and other ionized gases.
+              Originally, nebula was a name for
+              any diffuse astronomical object,
+              including galaxies beyond the Milky Way.
+            </nb-card-body>
+          </nb-card>
+        </nb-card-front>
+        <nb-card-back>
+          <nb-card accent="primary" status="info">
+            <nb-card-header>Back Card Header</nb-card-header>
+            <nb-card-body>
+              A nebula is an interstellar cloud of dust, hydrogen,
+              helium and other ionized gases.
+              Originally, nebula was a name for
+              any diffuse astronomical object,
+              including galaxies beyond the Milky Way.
+            </nb-card-body>
+          </nb-card>
+        </nb-card-back>
+      </nb-reveal-card>
+    
+      <!-- wizard -->
+    
+      <nb-card>
+        <nb-card-body>
+          <nb-stepper orientation="horizontal" disableStepNavigation>
+            <nb-step [label]="labelOne">
+              <ng-template #labelOne>First step</ng-template>
+              <h4>Step content #1</h4>
+              <p class="lorem">
+                Lorizzle ipsum dolizzle stuff fizzle, consectetuer adipiscing break it down.
+                Nullizzle sapien velizzle, my shizz pimpin', shizzle my nizzle crocodizzle shut the shizzle up,
+                gravida vizzle, dang.
+              </p>
+              <button class="prev-button" nbButton disabled nbStepperNext>prev</button>
+              <button class="next-button" nbButton nbStepperNext>next</button>
+            </nb-step>
+            <nb-step [label]="labelTwo">
+              <ng-template #labelTwo>Second step</ng-template>
+              <h4>Step content #2</h4>
+              <p class="lorem">
+                Lorizzle ipsum dolizzle stuff fizzle, consectetuer adipiscing break it down.
+                Nullizzle sapien velizzle, my shizz pimpin', shizzle my nizzle crocodizzle shut the shizzle up,
+                gravida vizzle, dang.
+              </p>
+              <button class="prev-button" nbButton nbStepperPrevious>prev</button>
+              <button class="next-button" nbButton nbStepperNext>next</button>
+            </nb-step>
+            <nb-step label="Third step">
+              <h4>Step content #3</h4>
+              <p class="lorem">
+                Lorizzle ipsum dolizzle stuff fizzle, consectetuer adipiscing break it down.
+                Nullizzle sapien velizzle, my shizz pimpin', shizzle my nizzle crocodizzle shut the shizzle up,
+                gravida vizzle, dang.
+              </p>
+              <button class="prev-button" nbButton nbStepperPrevious>prev</button>
+              <button class="next-button" nbButton nbStepperNext>next</button>
+            </nb-step>
+            <nb-step [label]="labelFour">
+              <ng-template #labelFour>Fourth step</ng-template>
+              <h4>Step content #4</h4>
+              <p class="lorem">
+                Lorizzle ipsum dolizzle stuff fizzle, consectetuer adipiscing break it down.
+                Nullizzle sapien velizzle, my shizz pimpin', shizzle my nizzle crocodizzle shut the shizzle up,
+                gravida vizzle, dang.
+              </p>
+              <button class="prev-button" nbButton nbStepperPrevious>prev</button>
+              <button class="next-button" nbButton disabled nbStepperNext>next</button>
+            </nb-step>
+          </nb-stepper>
+        </nb-card-body>
+      </nb-card>
+</div>
